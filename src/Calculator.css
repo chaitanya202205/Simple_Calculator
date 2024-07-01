@@ -1,0 +1,90 @@
+.calculator {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: #f9f9f9;
+}
+
+.display {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background: #e0e0e0;
+    padding: 10px;
+    border: 2px solid #ccc;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.display input {
+    width: 100%;
+    font-size: 2em;
+    border: none;
+    background: none;
+    text-align: right;
+    color: #333;
+}
+
+.result {
+    font-size: 1.5em;
+    color: #4caf50; /* Green color for the result */
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.buttons button {
+    padding: 20px;
+    font-size: 1.5em;
+    background: #fff;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.buttons button:hover {
+    background: #e0e0e0;
+}
+
+.buttons button:active {
+    background: #ccc;
+}
+
+.buttons button:nth-child(4n+1) {
+    background: #f9e0e0; /* Light red for the first column */
+}
+
+.buttons button:nth-child(4n+1):hover {
+    background: #f4c0c0; /* Darker light red for the first column on hover */
+}
+
+.buttons button:nth-child(4n+2) {
+    background: #e0f7fa; /* Light blue for the second column */
+}
+
+.buttons button:nth-child(4n+2):hover {
+    background: #b2ebf2; /* Darker light blue for the second column on hover */
+}
+
+.buttons button:nth-child(4n+3) {
+    background: #e8f5e9; /* Light green for the third column */
+}
+
+.buttons button:nth-child(4n+3):hover {
+    background: #c8e6c9; /* Darker light green for the third column on hover */
+}
+
+.buttons button:nth-child(4n+4) {
+    background: #fff3e0; /* Light orange for the fourth column */
+}
+
+.buttons button:nth-child(4n+4):hover {
+    background: #ffe0b2; /* Darker light orange for the fourth column on hover */
+}
